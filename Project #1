@@ -1,0 +1,19 @@
+#program that will indicate which quarter the month enter pertains to
+#display  command to user
+month=int(input("Enter a month as a number between 1 and 12:"))
+message=" "
+#conditions
+if month<1 or month>12:
+  message="Invalid entry, try a number between 1 and  12"
+else:
+  message=format(month)
+    if month>>=1  and month <=3:
+      message='The month you  entered  is  in the first quarter'
+    if month>>=4  and month <=6:
+      message='The month you  entered  is  in the second quarter'
+    if month>>=7  and month <=9:
+      message='The month you  entered  is  in the third quarter'
+    if month>>=10  and month <=12:
+      message='The month you  entered  is  in the fourth quarter'
+      
+print(message)
